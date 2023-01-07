@@ -11,6 +11,13 @@
 		FA10C5A62969B57C00925F5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10C5A52969B57C00925F5E /* ContentView.swift */; };
 		FA10C5A82969B57F00925F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA10C5A72969B57F00925F5E /* Assets.xcassets */; };
 		FA10C5AB2969B57F00925F5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA10C5AA2969B57F00925F5E /* Preview Assets.xcassets */; };
+		FA10C5C62969C88900925F5E /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10C5C52969C88900925F5E /* EditView.swift */; };
+		FA10C5C82969C89300925F5E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10C5C72969C89300925F5E /* AddView.swift */; };
+		FA10C5CA2969C89E00925F5E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10C5C92969C89E00925F5E /* HomeView.swift */; };
+		FA10C5CC2969C8A900925F5E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10C5CB2969C8A900925F5E /* DetailView.swift */; };
+		FA10C5CE2969C8B600925F5E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10C5CD2969C8B600925F5E /* SettingsView.swift */; };
+		FA10C5D02969C8C700925F5E /* KopilkaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10C5CF2969C8C700925F5E /* KopilkaModel.swift */; };
+		FA10C5D22969C8D400925F5E /* KopilkaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10C5D12969C8D400925F5E /* KopilkaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		FA10C5A52969B57C00925F5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA10C5A72969B57F00925F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA10C5AA2969B57F00925F5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA10C5C52969C88900925F5E /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		FA10C5C72969C89300925F5E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		FA10C5C92969C89E00925F5E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FA10C5CB2969C8A900925F5E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FA10C5CD2969C8B600925F5E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FA10C5CF2969C8C700925F5E /* KopilkaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KopilkaModel.swift; sourceTree = "<group>"; };
+		FA10C5D12969C8D400925F5E /* KopilkaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KopilkaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,8 @@
 		FA10C5A22969B57C00925F5E /* Kopilka */ = {
 			isa = PBXGroup;
 			children = (
+				FA10C5C32969C87200925F5E /* Model */,
+				FA10C5C42969C87A00925F5E /* View */,
 				FA10C5A32969B57C00925F5E /* KopilkaApp.swift */,
 				FA10C5A52969B57C00925F5E /* ContentView.swift */,
 				FA10C5A72969B57F00925F5E /* Assets.xcassets */,
@@ -65,6 +81,27 @@
 				FA10C5AA2969B57F00925F5E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA10C5C32969C87200925F5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA10C5CF2969C8C700925F5E /* KopilkaModel.swift */,
+				FA10C5D12969C8D400925F5E /* KopilkaViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA10C5C42969C87A00925F5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA10C5C52969C88900925F5E /* EditView.swift */,
+				FA10C5C72969C89300925F5E /* AddView.swift */,
+				FA10C5C92969C89E00925F5E /* HomeView.swift */,
+				FA10C5CB2969C8A900925F5E /* DetailView.swift */,
+				FA10C5CD2969C8B600925F5E /* SettingsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA10C5D22969C8D400925F5E /* KopilkaViewModel.swift in Sources */,
+				FA10C5CE2969C8B600925F5E /* SettingsView.swift in Sources */,
+				FA10C5D02969C8C700925F5E /* KopilkaModel.swift in Sources */,
+				FA10C5C82969C89300925F5E /* AddView.swift in Sources */,
+				FA10C5CC2969C8A900925F5E /* DetailView.swift in Sources */,
 				FA10C5A62969B57C00925F5E /* ContentView.swift in Sources */,
 				FA10C5A42969B57C00925F5E /* KopilkaApp.swift in Sources */,
+				FA10C5CA2969C89E00925F5E /* HomeView.swift in Sources */,
+				FA10C5C62969C88900925F5E /* EditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

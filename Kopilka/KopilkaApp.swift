@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct KopilkaApp: App {
+    
+    @StateObject var kopilkaViewModel: KopilkaViewModel = KopilkaViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {  // теперь все вью в проекте будут
+                ContentView()  // старотовое View
+            }
+            .environmentObject(kopilkaViewModel)
         }
     }
 }

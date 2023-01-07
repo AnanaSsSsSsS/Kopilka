@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    @State var target: KopilkaModel
+    @EnvironmentObject var kopilkaViewModel: KopilkaViewModel
+    @State var newTitle: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TextField("", text: $target.title)
+            .multilineTextAlignment(.leading)
+            .textSelection(.enabled)
+            .foregroundColor(.red)
+            .lineLimit(1)
+            .font(.headline)
+            .padding(.top, 15)
+            .padding(.horizontal)
+            .background(Color("backgroundColor"))
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        NavigationView {
+            DetailView(target: KopilkaModel(id: UUID(), title: "biba boba"))
+        }
     }
 }

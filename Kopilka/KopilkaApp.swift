@@ -15,7 +15,7 @@ struct KopilkaApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {  // теперь все вью в проекте будут
-                ContentView()  // старотовое View
+                TabBarView()  // старотовое View
             }
             .environmentObject(kopilkaViewModel)
         }

@@ -41,15 +41,15 @@ class KopilkaViewModel: ObservableObject {
         targets.move(fromOffsets: from, toOffset: to)
     }
     
-    func addTargets(title: String) {
+    func addTargets(title: String, cost: String) {
         let uuid = NSUUID()
-        let newItem = KopilkaModel(id: uuid as UUID, title: title)
+        let newItem = KopilkaModel(id: uuid as UUID, title: title, cost: cost)
         targets.append(newItem)
     }
     
     
     
-    func updateTargets(id: UUID, title: String) {
+    func updateTargets(id: UUID, title: String, cost: String) {
         if let target = targets.first(where: { $0.id == id}) {
             let index = targets.firstIndex(of: target)
             targets[index!].title = title

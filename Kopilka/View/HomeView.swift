@@ -60,11 +60,17 @@ struct KopilkaViewItem : View {
     let target: KopilkaModel
     
     var body: some View {
-        
-        Text(target.title)
-            .lineLimit(1)
-            .foregroundColor(.red)
-            .padding(.leading, 9)
+        VStack {
+            Text(target.title)
+                .lineLimit(1)
+                .foregroundColor(.red)
+                .padding(.leading, 9)
+            
+            Text(target.cost)
+                .lineLimit(1)
+                .foregroundColor(.red)
+                .padding(.leading, 9)
+        }
     }
     
 }

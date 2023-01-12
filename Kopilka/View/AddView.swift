@@ -10,12 +10,22 @@ import SwiftUI
 struct AddView: View {
     
     @State var newTitle: String = ""
+    @State var newCost: String = ""
     @EnvironmentObject var kopilkaViewModel: KopilkaViewModel
     @Environment(\.presentationMode) var presentedMode
     
     var body: some View {
         VStack {
             TextField("Название...", text: $newTitle)
+                .frame(height: 30)
+                .multilineTextAlignment(.leading)
+                .foregroundColor(.red)
+                .lineLimit(1)
+                .font(.headline)
+                .padding(.top, 15)
+                .padding(.horizontal)
+            
+            TextField("Цена...", text: $newCost)
                 .frame(height: 30)
                 .multilineTextAlignment(.leading)
                 .foregroundColor(.red)
@@ -38,7 +48,7 @@ struct AddView: View {
     }
     
     func saveButtonPressed() {
-        kopilkaViewModel.addTargets(title: newTitle)
+        kopilkaViewModel.addTargets(title: newTitle, cost: newCost)
         presentedMode.wrappedValue.dismiss()
     }
     
